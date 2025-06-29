@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerador de Senhas com Entropia</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Senhas</h1>
+
+        <label for="tamanhoSenha">Tamanho da senha:</label>
+        <input type="number" id="tamanhoSenha" min="4" max="32" value="12" />
+
+        <div class="checkboxes">
+            <label><input type="checkbox" id="maiusculas" checked /> Letras Maiúsculas</label>
+            <label><input type="checkbox" id="minusculas" checked /> Letras Minúsculas</label>
+            <label><input type="checkbox" id="numeros" checked /> Números</label>
+            <label><input type="checkbox" id="simbolos" checked /> Símbolos</label>
+        </div>
+
+        <button id="btnGerar">Gerar Senha</button>
+
+        <input type="text" id="senhaGerada" readonly />
+
+        <div id="forcaSenha" class="forcaSenha"></div>
+
+        <p class="entropia"></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
